@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from "react";
 import { ChatInput } from "./ChatInput";
 import { ChatMessage } from "./ChatMessage";
@@ -339,7 +338,7 @@ export const CateringChatbot = () => {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-4rem)] max-w-2xl mx-auto">
+    <div className="flex flex-col h-[calc(100vh-10rem)] max-w-2xl mx-auto">
       <div className="bg-food-beige rounded-xl shadow-lg overflow-hidden flex flex-col h-full border border-food-orange-light/30">
         <Header />
         
