@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom food-themed colors
+				"food-orange": "#FF9F1C",
+				"food-orange-light": "#FFBF69",
+				"food-green": "#2EC4B6",
+				"food-green-light": "#7DDCD3",
+				"food-beige": "#F7F3E3",
+				"food-red": "#EA3546",
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' },
+				},
+				'bounce-in': {
+					'0%': { transform: 'scale(0.8)', opacity: '0' },
+					'80%': { transform: 'scale(1.05)' },
+					'100%': { transform: 'scale(1)', opacity: '1' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'bounce-in': 'bounce-in 0.5s ease-out',
 			}
 		}
 	},
